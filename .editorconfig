@@ -1,0 +1,37 @@
+# EditorConfig is a configuration file for code editors.
+# For more information about EditorConfig, see https://editorconfig.org/
+
+# Top-most EditorConfig file
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Set specific EditorConfig for TypeScript and JavaScript files
+[*.ts]
+indent_size = 2
+
+[*.tsx]
+indent_size = 2
+
+# Set specific EditorConfig for SCSS files
+[*.scss]
+indent_size = 2
+
+# Set specific EditorConfig for SVG files
+[*.svg]
+indent_size = 2
+
+# Ignore some files and directories
+[package.json]
+indent_style = space
+indent_size = 2
+
+[node_modules/**]
+indent_style = space
+indent_size = 2

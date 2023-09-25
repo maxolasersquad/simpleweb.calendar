@@ -1,0 +1,30 @@
+@import 'theme';
+
+.swa-calendar-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: $primary-bg;
+  border-radius: 50%;
+
+  &.swa-calendar-day-outside {
+    color: $tertiary-accent;
+  }
+
+  &.swa-calendar-day-current {
+    background-color: $primary-accent;
+    color: white;
+  }
+
+  &.swa-calendar-day-outside.swa-calendar-day-current {
+    background-color: $tertiary-accent;
+  }
+
+  &.swa-calendar-day-current.swa-calendar-day-outside {
+    color: white;
+  }
+}

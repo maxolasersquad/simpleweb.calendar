@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 192 192"
+     width="192"
+     height="192">
+  <rect width="192" height="192" rx="19.2" ry="19.2" fill="#F7F7F7"/>
+  <circle cx="96" cy="96" r="57.6" fill="#FF5F3C"/>
+  <circle cx="96" cy="96" r="44.16" fill="#FFC107"/>
+  <circle cx="96" cy="96" r="30.72" fill="#4ABDAC"/>
+  <text x="96" y="113.28" fill="#333333" font-family="Arial, sans-serif" font-size="46.08px" text-anchor="middle">S
+  </text>
+</svg>

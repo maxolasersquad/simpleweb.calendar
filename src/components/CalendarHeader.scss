@@ -1,0 +1,23 @@
+@import 'theme';
+
+.swa-calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: $header-bg;
+}
+
+.swa-calendar-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 8px;
+}
+
+.swa-calendar-header-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: $primary-color;
+}
