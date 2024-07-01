@@ -1,46 +1,63 @@
-# Getting Started with Create React App
+# Simple Calendar Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an experiment in developing a web application using ChatGPT, including this README, which was also
+written by ChatGPT. The application is a simple calendar that displays months and allows navigation between them. The
+project also demonstrates deploying a React application using Docker.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+- [License](#license)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project showcases the use of ChatGPT in developing a simple calendar web application. The app displays months and
+allows users to navigate between them using back and forward buttons. Additionally, it updates the URL to reflect the
+currently viewed month/year.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Display a calendar for a specific month and year.
+- Navigate between months using back and forward buttons.
+- Update the URL to reflect the currently viewed month/year.
+- Handle URL parameters to initialize the calendar view.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Before you begin, ensure you have the following installed:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Docker
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+git clone https://gitlab.com/simplewebb/calendar.git
+cd calendar
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Running the Application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To run the application locally using Docker, follow these steps:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Build the Docker image:
 
-## Learn More
+```bash
+docker build -t simple-calendar-web-app .
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Run the Docker container:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+docker run -p 3000:80 simple-calendar-web-app
+```
+
+This will start the application inside a Docker container and make it accessible at http://localhost:3000.
