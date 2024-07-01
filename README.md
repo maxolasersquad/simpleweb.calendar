@@ -61,3 +61,7 @@ docker run -p 3000:80 simple-calendar-web-app
 ```
 
 This will start the application inside a Docker container and make it accessible at http://localhost:3000.
+
+## Live Deployment
+
+The application is also deployed and can be viewed live at: https://calendar.simplewebb.app
